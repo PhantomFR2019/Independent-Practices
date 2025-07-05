@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>Forms</h1>
+</head>
+<body>
+
+    <header style="background-color: lightblue;">
+        <h1>Welcome to buy an apple</h1>
+        <a href="index.html"> Home </a>
+        <br>
+        <a href="Lyrics.html"> Fav Song </a>
+    </header>
+
+    <main>
+        <h4> Check out this cat person</h4>
+        <img src="Images/Random Bear in cosmos.jpg" alt="Cosmotic Bear" width="500" height="400">
+        <p>
+            Do you know that this is a bear peeking into you? You dont, dont you?
+            he is always watching you, even when you are sleeping. Scary right?
+
+        </p>
+    </main>
+
+    <footer>
+        <hr>
+        author: Muahaha
+        <br>
+        &copy; Copyright reserved <br>
+        <small><a href="mailto:muahaha@gmail.com">muahaha@gmail.com</a></small>
+    </footer>
+<br>
+<br>
+<br>
+<br>
+
+<a href="index.html">
+    <button style="color: chocolate;"> Go Back to Index</button>
+</a>
+<br>
+<br>
+<a href="Lyrics.html">
+    <button style="color: cornflowerblue;"> Go to Lyrics</button>
+</a>
+<br>
+<br>
+    <form action="index.php" method="GET">
+
+        <label for="Username"> Username:</label>
+        <input type="text" id="Username" minlength="5" required>
+<br>
+        <label for="Password"> Password :</label>
+        <input type="password" id="Password" minlength="8" required>
+       
+        <br><br>
+       
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+
+    <h1> Don't have an account?</h1>
+    <form action="index.php" method="GET">
+
+        <label for="name"> Name    :</label>
+        <input type="text" id="name" placeholder="Pikachu" minlength="5" required>
+        <br><br>
+        <label for="email"> Email     :</label>
+        <input type="email" id="email" placeholder="****@gmail.com" required>
+        <br><br>
+        <label for="phone"> Phone<br>number  :</label>
+        <input type="tel" id="phone" placeholder="123-4566-7890" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+        <br><br>
+        <label for="bday">Birth <br> date        :</label>
+        <input type="date" id="bday" required>
+        <br><br>
+        <label for="title">title:</label>
+        <label for="mr.">Mr.</label>
+        <input type="radio" id="mr." name="title" value="Mr.">
+        <label for="ms.">Ms.</label>
+        <input type="radio" id="ms." name="title" value="Ms.">
+<br><br>
+        <label for="payment">Payment</label>
+        <select id="payment" name="payment">
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="cash">Cash</option>
+            <option value="bank">Bank Transfer</option>
+            </select>
+            <br>
+            <br>
+            <br>
+
+            <label for="subscribe"> Subscribe: </label>
+            <input type="checkbox" id="subscribe"> <br>
+
+            <label for="file">file:</label>
+            <input type="file" id="file" accept=".jpg, .png, .pdf">
+            <br><br>
+
+        
+    <input type="submit">
+    <input type="reset">
+   
+    </form>
+    <h1> How many apples you need?</h1>
+    <form action="index.php" method="GET">
+
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="1000000" required>
+    <br><br>
+    <label for="Color"></label>
+    <br><br>
+    <input type="submit" value="Order Now">
+
+
+    </form>
+</body>
+</html>
